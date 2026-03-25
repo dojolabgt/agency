@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, ChevronDown } from "lucide-react";
 import LightRays from "../../components/LightRays";
 import PageNav from "../../components/PageNav";
 
@@ -27,10 +27,12 @@ type ContactPageDict = {
   form: FormDict;
 };
 
+type Social = { label: string; url: string };
+
 type Dict = {
   nav: { home: string; work: string; services: string; contact: string };
   contactPage: ContactPageDict;
-  contact: { email: string; socials: string[] };
+  contact: { email: string; socials: Social[] };
 };
 
 const fadeUp = {
@@ -58,8 +60,11 @@ export default function ContactForm({ dict, lang }: { dict: Dict; lang: string }
   const f = cp.form;
 
   const set = (key: string) => (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => setFields((prev) => ({ ...prev, [key]: e.target.value }));
+
+  const setSel = (key: string) => (value: string) =>
+    setFields((prev) => ({ ...prev, [key]: value }));
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -145,11 +150,13 @@ export default function ContactForm({ dict, lang }: { dict: Dict; lang: string }
               <div className="flex items-center gap-5">
                 {dict.contact.socials.map((s) => (
                   <a
-                    key={s}
-                    href="#"
+                    key={s.label}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-[10px] font-medium uppercase tracking-[0.25em] text-white/35 hover:text-white transition-colors duration-200"
                   >
-                    {s}
+                    {s.label}
                   </a>
                 ))}
               </div>
@@ -200,13 +207,13 @@ export default function ContactForm({ dict, lang }: { dict: Dict; lang: string }
                     <SelectField
                       label={f.service}
                       value={fields.service}
-                      onChange={set("service")}
+                      onSelect={setSel("service")}
                       options={f.serviceOptions}
                     />
                     <SelectField
                       label={f.budget}
                       value={fields.budget}
-                      onChange={set("budget")}
+                      onSelect={setSel("budget")}
                       options={f.budgetOptions}
                     />
                   </div>
@@ -242,11 +249,13 @@ export default function ContactForm({ dict, lang }: { dict: Dict; lang: string }
         <div className="flex items-center gap-6">
           {dict.contact.socials.map((s) => (
             <a
-              key={s}
-              href="#"
+              key={s.label}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs text-white/40 hover:text-white transition-colors uppercase tracking-widest"
             >
-              {s}
+              {s.label}
             </a>
           ))}
         </div>
@@ -287,33 +296,67 @@ function FormField({
 function SelectField({
   label,
   value,
-  onChange,
+  onSelect,
   options,
 }: {
   label: string;
   value: string;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  onSelect: (value: string) => void;
   options: string[];
 }) {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   return (
-    <label className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2">
       <span className="text-[10px] font-medium uppercase tracking-[0.25em] text-white/40">
         {label}
       </span>
-      <select
-        value={value}
-        onChange={onChange}
-        className="w-full bg-white/[0.04] border border-white/10 rounded-xl px-4 py-3 text-sm text-white/80 outline-none focus:border-white/30 focus:bg-white/[0.06] transition-all duration-200 appearance-none cursor-pointer"
-        style={{ backgroundImage: "none" }}
-      >
-        <option value="" disabled className="bg-black text-white/50">—</option>
-        {options.map((opt) => (
-          <option key={opt} value={opt} className="bg-black text-white">
-            {opt}
-          </option>
-        ))}
-      </select>
-    </label>
+      <div ref={containerRef} className="relative">
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          className={`w-full bg-white/[0.04] border rounded-xl px-4 py-3 text-sm text-left flex items-center justify-between transition-all duration-200 hover:bg-white/[0.06] outline-none ${
+            open ? "border-white/30 bg-white/[0.06]" : "border-white/10"
+          }`}
+        >
+          <span className={value ? "text-white/80" : "text-white/25"}>
+            {value || "—"}
+          </span>
+          <ChevronDown
+            size={14}
+            className={`text-white/30 transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          />
+        </button>
+
+        {open && (
+          <div className="absolute top-full left-0 right-0 mt-1.5 bg-[#111111] border border-white/10 rounded-xl overflow-hidden z-50 shadow-xl shadow-black/50">
+            {options.map((opt) => (
+              <button
+                key={opt}
+                type="button"
+                onClick={() => { onSelect(opt); setOpen(false); }}
+                className={`w-full text-left px-4 py-3 text-sm transition-colors duration-150 hover:bg-white/[0.06] border-b border-white/[0.04] last:border-0 ${
+                  value === opt ? "text-white" : "text-white/55"
+                }`}
+              >
+                {opt}
+              </button>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
   );
 }
 

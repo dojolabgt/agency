@@ -17,10 +17,10 @@ export default function PageNav({ lang, dict }: { lang: string; dict: NavDict })
   const otherPath = pathname.replace(`/${lang}`, `/${otherLang}`);
 
   const links = [
-    { href: `/${lang}`, label: dict.home, exact: true },
-    { href: `/${lang}#work`, label: dict.work, exact: false },
-    { href: `/${lang}/services`, label: dict.services, exact: true },
-    { href: `/${lang}/contact`, label: dict.contact, exact: true },
+    { href: `/${lang}`, label: dict.home, active: pathname === `/${lang}` },
+    { href: `/${lang}#work`, label: dict.work, active: pathname === `/${lang}` || pathname.startsWith(`/${lang}/work`) },
+    { href: `/${lang}/services`, label: dict.services, active: pathname === `/${lang}/services` },
+    { href: `/${lang}/contact`, label: dict.contact, active: pathname === `/${lang}/contact` },
   ];
 
   return (
@@ -31,25 +31,19 @@ export default function PageNav({ lang, dict }: { lang: string; dict: NavDict })
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
     >
       <nav className="flex items-center gap-0.5 px-2 py-2 rounded-full bg-white/[0.05] border border-white/10 backdrop-blur-xl">
-        {links.map(({ href, label, exact }) => {
-          const hrefWithoutHash = href.split("#")[0];
-          const isActive = exact
-            ? pathname === hrefWithoutHash
-            : pathname.startsWith(hrefWithoutHash);
-          return (
+        {links.map(({ href, label, active }) => (
             <Link
               key={href}
               href={href}
               className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all duration-300 ${
-                isActive
+                active
                   ? "bg-white text-black"
                   : "text-white/50 hover:text-white hover:bg-white/10"
               }`}
             >
               {label}
             </Link>
-          );
-        })}
+        ))}
 
         <span className="w-px h-3.5 bg-white/10 mx-1" />
 

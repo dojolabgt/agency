@@ -5,13 +5,15 @@ import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
+type Social = { label: string; url: string };
+
 type ContactDict = {
   label: string;
   headline: string;
   subCopy: string;
   cta: string;
   email: string;
-  socials: string[];
+  socials: Social[];
 };
 
 const fadeUp = {
@@ -93,11 +95,13 @@ export default function Contact({ dict, lang }: { dict: ContactDict; lang: strin
         <div className="flex items-center gap-6">
           {dict.socials.map((social) => (
             <a
-              key={social}
-              href="#"
+              key={social.label}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm text-white/60 hover:text-white transition-colors uppercase tracking-widest"
             >
-              {social}
+              {social.label}
             </a>
           ))}
         </div>

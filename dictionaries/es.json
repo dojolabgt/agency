@@ -9,10 +9,10 @@
     "availability": "2 proyectos disponibles · Q2 2026"
   },
   "hero": {
-    "tagline": "Diseño que se gana su lugar.",
-    "headline": "Construimos marcas",
-    "headlineAccent": "que abren puertas.",
-    "subCopy": "Agencia de branding y diseño para founders y equipos que van en serio.",
+    "tagline": "bynadie — por nadie.",
+    "headline": "Marcas construidas",
+    "headlineAccent": "para hablar por sí solas.",
+    "subCopy": "Un estudio pequeño. Pocos proyectos a la vez. El trabajo habla por sí solo.",
     "cta": {
       "primary": "Ver proyectos",
       "secondary": "Iniciar proyecto"
@@ -23,7 +23,8 @@
     "Sistemas Visuales",
     "Estrategia",
     "Dirección de Arte",
-    "Naming"
+    "Naming",
+    "Por Nadie"
   ],
   "work": {
     "label": "Proyectos seleccionados",
@@ -116,7 +117,7 @@
           {
             "title": "Identidad de Marca",
             "price": "2,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Una identidad visual cohesiva que posiciona tu marca en el mercado.",
             "features": [
@@ -132,7 +133,7 @@
           {
             "title": "Branding Estratégico",
             "price": "4,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Sistema de marca completo desde posicionamiento hasta ejecución creativa.",
             "features": [
@@ -148,7 +149,7 @@
           {
             "title": "UX / UI Design",
             "price": "4,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Interfaces que los usuarios aman — productos en los que los negocios confían.",
             "features": [
@@ -173,7 +174,7 @@
           {
             "title": "Presencia Web",
             "price": "1,200",
-            "currency": "$",
+            "currency": "Q",
             "period": "/año",
             "description": "Todo lo que necesitas para lanzar una presencia profesional en línea hoy.",
             "features": [
@@ -189,7 +190,7 @@
           {
             "title": "Sitio Web Personalizado",
             "price": "3,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Un sitio a medida diseñado para convertir visitas en clientes.",
             "features": [
@@ -214,7 +215,7 @@
           {
             "title": "Automatización de Procesos",
             "price": "1,800",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Flujos no-code/low-code que eliminan tareas repetitivas de tu operación.",
             "features": [
@@ -230,7 +231,7 @@
           {
             "title": "Dev & Integraciones",
             "price": "3,000",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Scripts Python, conexiones API y pipelines de datos a medida de tu stack.",
             "features": [
@@ -266,12 +267,22 @@
       "success": "Mensaje enviado. Te contactaremos pronto."
     }
   },
+  "studio": {
+    "label": "El estudio",
+    "headline": "Hecho por nadie.",
+    "paragraphs": [
+      "BYND es la abreviación de bynadie. No porque no haya nadie detrás del trabajo, sino porque el trabajo no debería necesitar una cara para justificarse.",
+      "Un equipo pequeño. Pocos proyectos a la vez. Nos mantenemos fuera del foco y dejamos que las marcas que construimos hablen por sí solas."
+    ]
+  },
   "contact": {
     "label": "¿Listo para empezar?",
     "headline": "Hablemos de tu marca.",
     "subCopy": "Cuéntanos tu visión. Nos ponemos a trabajar.",
     "cta": "Iniciar proyecto",
-    "email": "hello@bynd.studio",
-    "socials": ["Instagram", "LinkedIn", "X"]
+    "email": "hello@bynadie.com",
+    "socials": [
+      { "label": "Instagram", "url": "https://instagram.com/bynadie.gt" }
+    ]
   }
 }

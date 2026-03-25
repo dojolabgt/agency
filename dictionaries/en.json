@@ -9,10 +9,10 @@
     "availability": "2 spots available · Q2 2026"
   },
   "hero": {
-    "tagline": "Design that earns its place.",
-    "headline": "We build brands",
-    "headlineAccent": "that open doors.",
-    "subCopy": "Branding and design studio for founders and teams that mean business.",
+    "tagline": "bynadie — by nobody.",
+    "headline": "Brands built",
+    "headlineAccent": "to speak for themselves.",
+    "subCopy": "A small studio. A few projects at a time. The work does the talking.",
     "cta": {
       "primary": "See our work",
       "secondary": "Start a project"
@@ -23,7 +23,8 @@
     "Visual Systems",
     "Strategy",
     "Art Direction",
-    "Naming"
+    "Naming",
+    "By Nobody"
   ],
   "work": {
     "label": "Selected projects",
@@ -36,11 +37,21 @@
         "name": "Kova",
         "client": "Kova Labs",
         "category": "Brand Identity",
-        "tags": ["Naming", "Logotype", "Palette"],
+        "tags": [
+          "Naming",
+          "Logotype",
+          "Palette"
+        ],
         "year": "2024",
         "description": "Premium sports supplement brand. Visual system built on extreme contrast and modular geometry.",
         "overview": "Kova needed more than a logo — they needed a visual language sharp enough to cut through a saturated market. We built a system rooted in extreme contrast, modular geometry, and typography that performs as hard as the product itself.",
-        "deliverables": ["Naming", "Logotype", "Color system", "Packaging design", "Brand guidelines"],
+        "deliverables": [
+          "Naming",
+          "Logotype",
+          "Color system",
+          "Packaging design",
+          "Brand guidelines"
+        ],
         "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
           "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=85",
@@ -53,11 +64,21 @@
         "name": "Lumen Studio",
         "client": "Lumen Studio",
         "category": "Visual Systems",
-        "tags": ["Brand System", "Typography", "UI"],
+        "tags": [
+          "Brand System",
+          "Typography",
+          "UI"
+        ],
         "year": "2024",
         "description": "Expanding architecture studio. Minimalist identity built around light as a central concept.",
         "overview": "An architecture firm with international ambitions but a deeply local story. We distilled their core philosophy — using light as a primary building material — into a visual identity rigorous enough to carry the weight of their portfolio.",
-        "deliverables": ["Brand strategy", "Visual identity", "Typography system", "Website design", "Print collateral"],
+        "deliverables": [
+          "Brand strategy",
+          "Visual identity",
+          "Typography system",
+          "Website design",
+          "Print collateral"
+        ],
         "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
           "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85",
@@ -70,11 +91,21 @@
         "name": "Arca",
         "client": "Arca Studio",
         "category": "Art Direction",
-        "tags": ["Editorial", "Packaging", "Identity"],
+        "tags": [
+          "Editorial",
+          "Packaging",
+          "Identity"
+        ],
         "year": "2025",
         "description": "Slow-fashion brand from CDMX. Archival aesthetic and local craftsmanship as narrative axis.",
         "overview": "Born from a deep respect for Mexican craft traditions, Arca required a brand that could hold contradictions: archival yet contemporary, handmade yet premium. We built the identity around restraint, material honesty, and the visual grammar of the Mexican archive.",
-        "deliverables": ["Art direction", "Identity system", "Packaging", "Editorial design", "Photography direction"],
+        "deliverables": [
+          "Art direction",
+          "Identity system",
+          "Packaging",
+          "Editorial design",
+          "Photography direction"
+        ],
         "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
           "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=85",
@@ -87,11 +118,21 @@
         "name": "Drift",
         "client": "Drift Travel",
         "category": "Strategy",
-        "tags": ["Positioning", "Naming", "Web"],
+        "tags": [
+          "Positioning",
+          "Naming",
+          "Web"
+        ],
         "year": "2025",
         "description": "Luxury travel agency. Brand redefinition focused on unique, unrepeatable experiences.",
         "overview": "Drift's existing brand said 'tour operator'. Their clients expected something closer to 'private expedition'. We repositioned the brand entirely around curated access — places and experiences that money alone cannot guarantee.",
-        "deliverables": ["Brand strategy", "Naming", "Visual identity", "Website", "Campaign direction"],
+        "deliverables": [
+          "Brand strategy",
+          "Naming",
+          "Visual identity",
+          "Website",
+          "Campaign direction"
+        ],
         "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
           "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=85",
@@ -111,12 +152,16 @@
         "index": "01",
         "title": "Design",
         "description": "Brand systems and visual identities built to endure. From logo to full design system.",
-        "tags": ["Branding", "Identity", "UX/UI"],
+        "tags": [
+          "Branding",
+          "Identity",
+          "UX/UI"
+        ],
         "plans": [
           {
             "title": "Brand Identity",
             "price": "2,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "A cohesive visual identity that establishes your brand in the market.",
             "features": [
@@ -132,7 +177,7 @@
           {
             "title": "Strategic Branding",
             "price": "4,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "End-to-end brand system from positioning to full creative execution.",
             "features": [
@@ -148,7 +193,7 @@
           {
             "title": "UX / UI Design",
             "price": "4,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Interfaces users love — products businesses can rely on.",
             "features": [
@@ -168,12 +213,16 @@
         "index": "02",
         "title": "Web",
         "description": "Landing pages and custom sites designed to convert. Built fast, built right.",
-        "tags": ["Landing", "Website", "CMS"],
+        "tags": [
+          "Landing",
+          "Website",
+          "CMS"
+        ],
         "plans": [
           {
             "title": "Web Presence",
             "price": "1,200",
-            "currency": "$",
+            "currency": "Q",
             "period": "/yr",
             "description": "Everything you need to launch a professional online presence today.",
             "features": [
@@ -189,7 +238,7 @@
           {
             "title": "Custom Website",
             "price": "3,500",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "A tailored site engineered to convert visitors into clients.",
             "features": [
@@ -209,12 +258,16 @@
         "index": "03",
         "title": "Automations",
         "description": "n8n, Python, APIs and custom workflows. Scale your operation without adding headcount.",
-        "tags": ["n8n", "Python", "APIs"],
+        "tags": [
+          "n8n",
+          "Python",
+          "APIs"
+        ],
         "plans": [
           {
             "title": "Process Automation",
             "price": "1,800",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Smart no-code/low-code workflows that eliminate repetitive manual tasks.",
             "features": [
@@ -230,7 +283,7 @@
           {
             "title": "Dev & Integrations",
             "price": "3,000",
-            "currency": "$",
+            "currency": "Q",
             "period": "",
             "description": "Custom Python scripts, API connections and data pipelines built to your stack.",
             "features": [
@@ -258,20 +311,44 @@
       "email": "Email address",
       "company": "Company (optional)",
       "service": "What are you looking for?",
-      "serviceOptions": ["Brand Identity", "Strategic Branding", "UX / UI Design", "Web Presence", "Custom Website", "Process Automation", "Dev & Integrations", "Not sure yet"],
+      "serviceOptions": [
+        "Brand Identity",
+        "Strategic Branding",
+        "UX / UI Design",
+        "Web Presence",
+        "Custom Website",
+        "Process Automation",
+        "Dev & Integrations",
+        "Not sure yet"
+      ],
       "message": "Tell us about your project",
       "budget": "Estimated budget",
-      "budgetOptions": ["Under $1,500", "$1,500 – $3,500", "$3,500 – $7,000", "$7,000+"],
+      "budgetOptions": [
+        "Under $1,500",
+        "$1,500 – $3,500",
+        "$3,500 – $7,000",
+        "$7,000+"
+      ],
       "submit": "Send message",
       "success": "Message sent. We'll be in touch soon."
     }
+  },
+  "studio": {
+    "label": "The studio",
+    "headline": "Built by nobody.",
+    "paragraphs": [
+      "BYND is short for bynadie — Spanish for 'by nobody'. Not because there's no one behind the work, but because the work shouldn't need a face to justify it.",
+      "A small team. A few projects at a time. We stay out of the spotlight and let the brands we build do the talking."
+    ]
   },
   "contact": {
     "label": "Ready to start?",
     "headline": "Let's talk about your brand.",
     "subCopy": "Tell us your vision. We get to work.",
     "cta": "Start a project",
-    "email": "hello@bynd.studio",
-    "socials": ["Instagram", "LinkedIn", "X"]
+    "email": "hello@bynadie.com",
+    "socials": [
+      { "label": "Instagram", "url": "https://instagram.com/bynadie.gt" }
+    ]
   }
 }

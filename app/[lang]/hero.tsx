@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import LightRays from "../components/LightRays";
 import { ArrowRight } from "lucide-react";
 import Work from "./work";
+import Studio from "./studio";
 import Contact from "./contact";
 
 type Project = {
@@ -35,6 +36,11 @@ type Dict = {
     label: string;
     cta: string;
     projects: Project[];
+  };
+  studio: {
+    label: string;
+    headline: string;
+    paragraphs: string[];
   };
   contact: any;
 };
@@ -311,6 +317,9 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: string }) {
 
       {/* ── Work section ─────────────────────────────────── */}
       <Work dict={dict.work} lang={lang} />
+
+      {/* ── Studio ───────────────────────────────────────── */}
+      <Studio dict={dict.studio} />
 
       {/* ── Contact CTA ──────────────────────────────────── */}
       <Contact dict={dict.contact} lang={lang} />

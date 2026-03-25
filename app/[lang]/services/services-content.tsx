@@ -37,10 +37,12 @@ type ServicesDict = {
   talkCta: string;
 };
 
+type Social = { label: string; url: string };
+
 type Dict = {
   nav: { home: string; work: string; services: string; contact: string };
   services: ServicesDict;
-  contact: { email: string; socials: string[] };
+  contact: { email: string; socials: Social[] };
 };
 
 const fadeUp = {
@@ -243,6 +245,9 @@ function PricingCard({ plan, lang }: { plan: Plan; lang: string }) {
         </p>
 
         {/* Price */}
+        <p className="text-[9px] font-medium uppercase tracking-[0.25em] text-white/30 mb-1.5">
+          {lang === "es" ? "Desde" : "From"}
+        </p>
         <div className="flex items-baseline gap-0.5 mb-3">
           <span className="text-xs text-white/35 self-start mt-1.5">{plan.currency}</span>
           <span className="text-5xl font-light text-white tracking-tight leading-none">
@@ -299,7 +304,7 @@ function FooterNote({
   note: string;
   talkCta: string;
   lang: string;
-  socials: string[];
+  socials: Social[];
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-5%" });
@@ -329,11 +334,13 @@ function FooterNote({
         <div className="flex items-center gap-6">
           {socials.map((s) => (
             <a
-              key={s}
-              href="#"
+              key={s.label}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-xs text-white/35 hover:text-white transition-colors uppercase tracking-widest"
             >
-              {s}
+              {s.label}
             </a>
           ))}
         </div>
