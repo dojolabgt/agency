@@ -9,10 +9,10 @@
     "availability": "2 proyectos disponibles · Q2 2026"
   },
   "hero": {
-    "tagline": "By Logic, Beyond Design",
-    "headline": "Construimos marcas que",
-    "headlineAccent": "viven más allá de lo ordinario.",
-    "subCopy": "Studio de branding estratégico que ayuda a founders y equipos a construir identidades que convierten.",
+    "tagline": "Diseño que se gana su lugar.",
+    "headline": "Construimos marcas",
+    "headlineAccent": "que abren puertas.",
+    "subCopy": "Agencia de branding y diseño para founders y equipos que van en serio.",
     "cta": {
       "primary": "Ver proyectos",
       "secondary": "Iniciar proyecto"
@@ -104,13 +104,13 @@
     "label": "Servicios y Precios",
     "headline": "Lo que hacemos,",
     "headlineAccent": "lo que cuesta.",
-    "subCopy": "Tres áreas de práctica. Precios transparentes. Cada proyecto cotizado individualmente.",
+    "subCopy": "Tres áreas. Precios transparentes. Cada proyecto cotizado individualmente.",
     "categories": [
       {
         "id": "design",
         "index": "01",
         "title": "Diseño",
-        "description": "Sistemas de marca, identidades visuales e interfaces construidos para perdurar. Del logotipo al design system completo.",
+        "description": "Sistemas de marca e identidades visuales construidos para durar. Del logotipo al design system completo.",
         "tags": ["Branding", "Identidad", "UX/UI"],
         "plans": [
           {
@@ -167,7 +167,7 @@
         "id": "web",
         "index": "02",
         "title": "Web",
-        "description": "Landing pages y sitios a medida diseñados para convertir. Rápidos, bien construidos, sin excusas.",
+        "description": "Landing pages y sitios a medida diseñados para convertir. Rápidos, bien construidos.",
         "tags": ["Landing", "Sitio Web", "CMS"],
         "plans": [
           {
@@ -208,7 +208,7 @@
         "id": "automations",
         "index": "03",
         "title": "Automatizaciones",
-        "description": "n8n, Python, APIs y flujos a medida. Elimina el trabajo manual y escala tu operación sin contratar más.",
+        "description": "n8n, Python, APIs y flujos a medida. Escala tu operación sin contratar más.",
         "tags": ["n8n", "Python", "APIs"],
         "plans": [
           {
@@ -251,7 +251,7 @@
   },
   "contactPage": {
     "label": "Contacto",
-    "headline": "Construyamos algo increíble.",
+    "headline": "Construyamos algo grande.",
     "subCopy": "Cuéntanos sobre tu proyecto. Te respondemos en menos de 24 horas.",
     "form": {
       "name": "Tu nombre",
@@ -268,8 +268,8 @@
   },
   "contact": {
     "label": "¿Listo para empezar?",
-    "headline": "¿Listo para llevar su marca al siguiente nivel?",
-    "subCopy": "Cuéntanos sobre tu visión y evaluaremos si somos el equipo adecuado para hacerla realidad.",
+    "headline": "Hablemos de tu marca.",
+    "subCopy": "Cuéntanos tu visión. Nos ponemos a trabajar.",
     "cta": "Iniciar proyecto",
     "email": "hello@bynd.studio",
     "socials": ["Instagram", "LinkedIn", "X"]

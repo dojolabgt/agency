@@ -9,10 +9,10 @@
     "availability": "2 spots available · Q2 2026"
   },
   "hero": {
-    "tagline": "By Logic, Beyond Design",
-    "headline": "We build brands that",
-    "headlineAccent": "live beyond the ordinary.",
-    "subCopy": "Strategy-led branding studio helping founders and teams build identities that convert.",
+    "tagline": "Design that earns its place.",
+    "headline": "We build brands",
+    "headlineAccent": "that open doors.",
+    "subCopy": "Branding and design studio for founders and teams that mean business.",
     "cta": {
       "primary": "See our work",
       "secondary": "Start a project"
@@ -104,13 +104,13 @@
     "label": "Services & Pricing",
     "headline": "What we do,",
     "headlineAccent": "what it costs.",
-    "subCopy": "Three practice areas. Transparent starting prices. Every project quoted individually.",
+    "subCopy": "Three areas. Transparent pricing. Every project quoted individually.",
     "categories": [
       {
         "id": "design",
         "index": "01",
         "title": "Design",
-        "description": "Brand systems, visual identities and interfaces built to endure. From logo to full design system.",
+        "description": "Brand systems and visual identities built to endure. From logo to full design system.",
         "tags": ["Branding", "Identity", "UX/UI"],
         "plans": [
           {
@@ -208,7 +208,7 @@
         "id": "automations",
         "index": "03",
         "title": "Automations",
-        "description": "n8n, Python, APIs and custom workflows. Eliminate manual work and scale your operation without adding headcount.",
+        "description": "n8n, Python, APIs and custom workflows. Scale your operation without adding headcount.",
         "tags": ["n8n", "Python", "APIs"],
         "plans": [
           {
@@ -268,8 +268,8 @@
   },
   "contact": {
     "label": "Ready to start?",
-    "headline": "Ready to take your brand to the next level?",
-    "subCopy": "Tell us about your vision and we'll evaluate if we are the right team to make it a reality.",
+    "headline": "Let's talk about your brand.",
+    "subCopy": "Tell us your vision. We get to work.",
     "cta": "Start a project",
     "email": "hello@bynd.studio",
     "socials": ["Instagram", "LinkedIn", "X"]
