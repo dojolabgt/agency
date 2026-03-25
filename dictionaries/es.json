@@ -1,0 +1,277 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "work": "Proyectos",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "badge": {
+    "availability": "2 proyectos disponibles · Q2 2026"
+  },
+  "hero": {
+    "tagline": "By Logic, Beyond Design",
+    "headline": "Construimos marcas que",
+    "headlineAccent": "viven más allá de lo ordinario.",
+    "subCopy": "Studio de branding estratégico que ayuda a founders y equipos a construir identidades que convierten.",
+    "cta": {
+      "primary": "Ver proyectos",
+      "secondary": "Iniciar proyecto"
+    }
+  },
+  "ticker": [
+    "Identidad de Marca",
+    "Sistemas Visuales",
+    "Estrategia",
+    "Dirección de Arte",
+    "Naming"
+  ],
+  "work": {
+    "label": "Proyectos seleccionados",
+    "backLabel": "Proyectos",
+    "nextLabel": "Siguiente proyecto",
+    "projects": [
+      {
+        "index": "01",
+        "slug": "kova",
+        "name": "Kova",
+        "client": "Kova Labs",
+        "category": "Identidad de Marca",
+        "tags": ["Naming", "Logotipo", "Paleta"],
+        "year": "2024",
+        "description": "Marca premium de suplementos deportivos. Sistema visual basado en contraste extremo y geometría modular.",
+        "overview": "Kova necesitaba más que un logo — necesitaba un lenguaje visual lo suficientemente afilado para destacar en un mercado saturado. Construimos un sistema basado en contraste extremo, geometría modular y tipografía que trabaja tan duro como el producto.",
+        "deliverables": ["Naming", "Logotipo", "Sistema de color", "Diseño de packaging", "Manual de marca"],
+        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=85"
+        ]
+      },
+      {
+        "index": "02",
+        "slug": "lumen-studio",
+        "name": "Lumen Studio",
+        "client": "Lumen Studio",
+        "category": "Sistemas Visuales",
+        "tags": ["Brand System", "Tipografía", "UI"],
+        "year": "2024",
+        "description": "Estudio de arquitectura en expansión. Identidad minimalista construida sobre la luz como concepto central.",
+        "overview": "Un estudio de arquitectura con ambiciones internacionales y una historia profundamente local. Destilamos su filosofía central — usar la luz como material constructivo primario — en una identidad visual rigurosa y capaz de cargar con el peso de su portafolio.",
+        "deliverables": ["Estrategia de marca", "Identidad visual", "Sistema tipográfico", "Diseño web", "Material impreso"],
+        "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1513584684374-7beed10a0d7e?auto=format&fit=crop&w=900&q=85"
+        ]
+      },
+      {
+        "index": "03",
+        "slug": "arca",
+        "name": "Arca",
+        "client": "Arca Studio",
+        "category": "Dirección de Arte",
+        "tags": ["Editorial", "Packaging", "Identidad"],
+        "year": "2025",
+        "description": "Marca de moda slow-fashion de CDMX. Estética archival y manufactura local como eje narrativo.",
+        "overview": "Nacida de un profundo respeto por las tradiciones artesanales mexicanas, Arca requería una marca capaz de sostener contradicciones: archival pero contemporánea, hecha a mano pero premium. Construimos la identidad sobre la contención, la honestidad material y la gramática visual del archivo mexicano.",
+        "deliverables": ["Dirección de arte", "Sistema de identidad", "Packaging", "Diseño editorial", "Dirección fotográfica"],
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85"
+        ]
+      },
+      {
+        "index": "04",
+        "slug": "drift",
+        "name": "Drift",
+        "client": "Drift Travel",
+        "category": "Estrategia",
+        "tags": ["Posicionamiento", "Naming", "Web"],
+        "year": "2025",
+        "description": "Agencia de viajes de lujo. Redefinición de marca enfocada en experiencias únicas e irrepetibles.",
+        "overview": "La marca existente de Drift decía 'operadora de tours'. Sus clientes esperaban algo más cercano a 'expedición privada'. Reposicionamos la marca por completo alrededor del concepto de acceso curado — lugares y experiencias que el dinero solo no puede garantizar.",
+        "deliverables": ["Estrategia de marca", "Naming", "Identidad visual", "Sitio web", "Dirección de campaña"],
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "label": "Servicios y Precios",
+    "headline": "Lo que hacemos,",
+    "headlineAccent": "lo que cuesta.",
+    "subCopy": "Tres áreas de práctica. Precios transparentes. Cada proyecto cotizado individualmente.",
+    "categories": [
+      {
+        "id": "design",
+        "index": "01",
+        "title": "Diseño",
+        "description": "Sistemas de marca, identidades visuales e interfaces construidos para perdurar. Del logotipo al design system completo.",
+        "tags": ["Branding", "Identidad", "UX/UI"],
+        "plans": [
+          {
+            "title": "Identidad de Marca",
+            "price": "2,500",
+            "currency": "$",
+            "period": "",
+            "description": "Una identidad visual cohesiva que posiciona tu marca en el mercado.",
+            "features": [
+              "Logo y logotipo",
+              "Paleta de color y tipografía",
+              "Manual de marca (básico)",
+              "Kit para redes sociales",
+              "1 ronda de revisiones"
+            ],
+            "cta": "Empezar aquí",
+            "highlighted": false
+          },
+          {
+            "title": "Branding Estratégico",
+            "price": "4,500",
+            "currency": "$",
+            "period": "",
+            "description": "Sistema de marca completo desde posicionamiento hasta ejecución creativa.",
+            "features": [
+              "Naming y posicionamiento",
+              "Sistema de identidad completo",
+              "Dirección de arte y fotografía",
+              "Manual de marca completo",
+              "2 rondas de revisiones"
+            ],
+            "cta": "Construye tu marca",
+            "highlighted": true
+          },
+          {
+            "title": "UX / UI Design",
+            "price": "4,500",
+            "currency": "$",
+            "period": "",
+            "description": "Interfaces que los usuarios aman — productos en los que los negocios confían.",
+            "features": [
+              "Discovery e investigación",
+              "Wireframes y prototipado",
+              "Diseño UI completo",
+              "Design system interactivo",
+              "Entrega a desarrollo"
+            ],
+            "cta": "Diseña tu producto",
+            "highlighted": false
+          }
+        ]
+      },
+      {
+        "id": "web",
+        "index": "02",
+        "title": "Web",
+        "description": "Landing pages y sitios a medida diseñados para convertir. Rápidos, bien construidos, sin excusas.",
+        "tags": ["Landing", "Sitio Web", "CMS"],
+        "plans": [
+          {
+            "title": "Presencia Web",
+            "price": "1,200",
+            "currency": "$",
+            "period": "/año",
+            "description": "Todo lo que necesitas para lanzar una presencia profesional en línea hoy.",
+            "features": [
+              "Landing page profesional",
+              "Dominio .com incluido",
+              "Hosting y certificado SSL",
+              "Diseño responsive mobile-first",
+              "Mantenimiento 12 meses"
+            ],
+            "cta": "Lanzar ahora",
+            "highlighted": false
+          },
+          {
+            "title": "Sitio Web Personalizado",
+            "price": "3,500",
+            "currency": "$",
+            "period": "",
+            "description": "Un sitio a medida diseñado para convertir visitas en clientes.",
+            "features": [
+              "Hasta 8 páginas personalizadas",
+              "Sistema de diseño exclusivo",
+              "Integración CMS",
+              "SEO y optimización de rendimiento",
+              "2 rondas de revisiones"
+            ],
+            "cta": "Comenzar",
+            "highlighted": true
+          }
+        ]
+      },
+      {
+        "id": "automations",
+        "index": "03",
+        "title": "Automatizaciones",
+        "description": "n8n, Python, APIs y flujos a medida. Elimina el trabajo manual y escala tu operación sin contratar más.",
+        "tags": ["n8n", "Python", "APIs"],
+        "plans": [
+          {
+            "title": "Automatización de Procesos",
+            "price": "1,800",
+            "currency": "$",
+            "period": "",
+            "description": "Flujos no-code/low-code que eliminan tareas repetitivas de tu operación.",
+            "features": [
+              "Auditoría y mapeo de procesos",
+              "Flujos n8n / Make / Zapier",
+              "Configuración CRM y herramientas",
+              "3 meses de soporte incluido",
+              "Documentación completa"
+            ],
+            "cta": "Automatizar ahora",
+            "highlighted": false
+          },
+          {
+            "title": "Dev & Integraciones",
+            "price": "3,000",
+            "currency": "$",
+            "period": "",
+            "description": "Scripts Python, conexiones API y pipelines de datos a medida de tu stack.",
+            "features": [
+              "Scripting Python personalizado",
+              "Setup REST API y webhooks",
+              "Pipelines de datos y ETL",
+              "Scrapers y dashboards",
+              "Opción de mantenimiento continuo"
+            ],
+            "cta": "Lo construimos",
+            "highlighted": false
+          }
+        ]
+      }
+    ],
+    "note": "Los precios son referencias de partida. La cotización final depende del alcance y complejidad.",
+    "talkCta": "¿No sabes por dónde empezar? Hablemos →"
+  },
+  "contactPage": {
+    "label": "Contacto",
+    "headline": "Construyamos algo increíble.",
+    "subCopy": "Cuéntanos sobre tu proyecto. Te respondemos en menos de 24 horas.",
+    "form": {
+      "name": "Tu nombre",
+      "email": "Correo electrónico",
+      "company": "Empresa (opcional)",
+      "service": "¿Qué estás buscando?",
+      "serviceOptions": ["Identidad de Marca", "Branding Estratégico", "UX / UI Design", "Presencia Web", "Sitio Web Personalizado", "Automatización de Procesos", "Dev & Integraciones", "Aún no lo sé"],
+      "message": "Cuéntanos sobre tu proyecto",
+      "budget": "Presupuesto estimado",
+      "budgetOptions": ["Menos de $1,500", "$1,500 – $3,500", "$3,500 – $7,000", "$7,000+"],
+      "submit": "Enviar mensaje",
+      "success": "Mensaje enviado. Te contactaremos pronto."
+    }
+  },
+  "contact": {
+    "label": "¿Listo para empezar?",
+    "headline": "¿Listo para llevar su marca al siguiente nivel?",
+    "subCopy": "Cuéntanos sobre tu visión y evaluaremos si somos el equipo adecuado para hacerla realidad.",
+    "cta": "Iniciar proyecto",
+    "email": "hello@bynd.studio",
+    "socials": ["Instagram", "LinkedIn", "X"]
+  }
+}

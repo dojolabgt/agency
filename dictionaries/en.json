@@ -1,0 +1,277 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "badge": {
+    "availability": "2 spots available · Q2 2026"
+  },
+  "hero": {
+    "tagline": "By Logic, Beyond Design",
+    "headline": "We build brands that",
+    "headlineAccent": "live beyond the ordinary.",
+    "subCopy": "Strategy-led branding studio helping founders and teams build identities that convert.",
+    "cta": {
+      "primary": "See our work",
+      "secondary": "Start a project"
+    }
+  },
+  "ticker": [
+    "Brand Identity",
+    "Visual Systems",
+    "Strategy",
+    "Art Direction",
+    "Naming"
+  ],
+  "work": {
+    "label": "Selected projects",
+    "backLabel": "Work",
+    "nextLabel": "Next project",
+    "projects": [
+      {
+        "index": "01",
+        "slug": "kova",
+        "name": "Kova",
+        "client": "Kova Labs",
+        "category": "Brand Identity",
+        "tags": ["Naming", "Logotype", "Palette"],
+        "year": "2024",
+        "description": "Premium sports supplement brand. Visual system built on extreme contrast and modular geometry.",
+        "overview": "Kova needed more than a logo — they needed a visual language sharp enough to cut through a saturated market. We built a system rooted in extreme contrast, modular geometry, and typography that performs as hard as the product itself.",
+        "deliverables": ["Naming", "Logotype", "Color system", "Packaging design", "Brand guidelines"],
+        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=85"
+        ]
+      },
+      {
+        "index": "02",
+        "slug": "lumen-studio",
+        "name": "Lumen Studio",
+        "client": "Lumen Studio",
+        "category": "Visual Systems",
+        "tags": ["Brand System", "Typography", "UI"],
+        "year": "2024",
+        "description": "Expanding architecture studio. Minimalist identity built around light as a central concept.",
+        "overview": "An architecture firm with international ambitions but a deeply local story. We distilled their core philosophy — using light as a primary building material — into a visual identity rigorous enough to carry the weight of their portfolio.",
+        "deliverables": ["Brand strategy", "Visual identity", "Typography system", "Website design", "Print collateral"],
+        "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1513584684374-7beed10a0d7e?auto=format&fit=crop&w=900&q=85"
+        ]
+      },
+      {
+        "index": "03",
+        "slug": "arca",
+        "name": "Arca",
+        "client": "Arca Studio",
+        "category": "Art Direction",
+        "tags": ["Editorial", "Packaging", "Identity"],
+        "year": "2025",
+        "description": "Slow-fashion brand from CDMX. Archival aesthetic and local craftsmanship as narrative axis.",
+        "overview": "Born from a deep respect for Mexican craft traditions, Arca required a brand that could hold contradictions: archival yet contemporary, handmade yet premium. We built the identity around restraint, material honesty, and the visual grammar of the Mexican archive.",
+        "deliverables": ["Art direction", "Identity system", "Packaging", "Editorial design", "Photography direction"],
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85"
+        ]
+      },
+      {
+        "index": "04",
+        "slug": "drift",
+        "name": "Drift",
+        "client": "Drift Travel",
+        "category": "Strategy",
+        "tags": ["Positioning", "Naming", "Web"],
+        "year": "2025",
+        "description": "Luxury travel agency. Brand redefinition focused on unique, unrepeatable experiences.",
+        "overview": "Drift's existing brand said 'tour operator'. Their clients expected something closer to 'private expedition'. We repositioned the brand entirely around curated access — places and experiences that money alone cannot guarantee.",
+        "deliverables": ["Brand strategy", "Naming", "Visual identity", "Website", "Campaign direction"],
+        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=85",
+        "gallery": [
+          "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85"
+        ]
+      }
+    ]
+  },
+  "services": {
+    "label": "Services & Pricing",
+    "headline": "What we do,",
+    "headlineAccent": "what it costs.",
+    "subCopy": "Three practice areas. Transparent starting prices. Every project quoted individually.",
+    "categories": [
+      {
+        "id": "design",
+        "index": "01",
+        "title": "Design",
+        "description": "Brand systems, visual identities and interfaces built to endure. From logo to full design system.",
+        "tags": ["Branding", "Identity", "UX/UI"],
+        "plans": [
+          {
+            "title": "Brand Identity",
+            "price": "2,500",
+            "currency": "$",
+            "period": "",
+            "description": "A cohesive visual identity that establishes your brand in the market.",
+            "features": [
+              "Logo & logotype suite",
+              "Color palette & typography",
+              "Brand guidelines (basic)",
+              "Social media kit",
+              "1 revision round"
+            ],
+            "cta": "Start here",
+            "highlighted": false
+          },
+          {
+            "title": "Strategic Branding",
+            "price": "4,500",
+            "currency": "$",
+            "period": "",
+            "description": "End-to-end brand system from positioning to full creative execution.",
+            "features": [
+              "Naming & market positioning",
+              "Full identity system",
+              "Art direction & photography",
+              "Complete brand manual",
+              "2 revision rounds"
+            ],
+            "cta": "Build your brand",
+            "highlighted": true
+          },
+          {
+            "title": "UX / UI Design",
+            "price": "4,500",
+            "currency": "$",
+            "period": "",
+            "description": "Interfaces users love — products businesses can rely on.",
+            "features": [
+              "Discovery & user research",
+              "Wireframes & prototyping",
+              "Full UI design",
+              "Interactive design system",
+              "Developer handoff"
+            ],
+            "cta": "Design your product",
+            "highlighted": false
+          }
+        ]
+      },
+      {
+        "id": "web",
+        "index": "02",
+        "title": "Web",
+        "description": "Landing pages and custom sites designed to convert. Built fast, built right.",
+        "tags": ["Landing", "Website", "CMS"],
+        "plans": [
+          {
+            "title": "Web Presence",
+            "price": "1,200",
+            "currency": "$",
+            "period": "/yr",
+            "description": "Everything you need to launch a professional online presence today.",
+            "features": [
+              "Professional landing page",
+              ".com domain included",
+              "Hosting & SSL certificate",
+              "Mobile-first responsive",
+              "12-month maintenance"
+            ],
+            "cta": "Launch now",
+            "highlighted": false
+          },
+          {
+            "title": "Custom Website",
+            "price": "3,500",
+            "currency": "$",
+            "period": "",
+            "description": "A tailored site engineered to convert visitors into clients.",
+            "features": [
+              "Up to 8 custom pages",
+              "Bespoke design system",
+              "CMS integration",
+              "SEO & performance setup",
+              "2 revision rounds"
+            ],
+            "cta": "Get started",
+            "highlighted": true
+          }
+        ]
+      },
+      {
+        "id": "automations",
+        "index": "03",
+        "title": "Automations",
+        "description": "n8n, Python, APIs and custom workflows. Eliminate manual work and scale your operation without adding headcount.",
+        "tags": ["n8n", "Python", "APIs"],
+        "plans": [
+          {
+            "title": "Process Automation",
+            "price": "1,800",
+            "currency": "$",
+            "period": "",
+            "description": "Smart no-code/low-code workflows that eliminate repetitive manual tasks.",
+            "features": [
+              "Process audit & mapping",
+              "n8n / Make / Zapier flows",
+              "CRM & tooling setup",
+              "3-month support included",
+              "Full documentation"
+            ],
+            "cta": "Automate now",
+            "highlighted": false
+          },
+          {
+            "title": "Dev & Integrations",
+            "price": "3,000",
+            "currency": "$",
+            "period": "",
+            "description": "Custom Python scripts, API connections and data pipelines built to your stack.",
+            "features": [
+              "Custom Python scripting",
+              "REST API & webhook setup",
+              "Data pipelines & ETL",
+              "Scrapers & dashboards",
+              "Ongoing maintenance option"
+            ],
+            "cta": "Let's build it",
+            "highlighted": false
+          }
+        ]
+      }
+    ],
+    "note": "Prices are starting references. Final quote depends on scope and complexity.",
+    "talkCta": "Not sure where to start? Let's talk →"
+  },
+  "contactPage": {
+    "label": "Contact",
+    "headline": "Let's build something great.",
+    "subCopy": "Tell us about your project. We'll get back to you within 24 hours.",
+    "form": {
+      "name": "Your name",
+      "email": "Email address",
+      "company": "Company (optional)",
+      "service": "What are you looking for?",
+      "serviceOptions": ["Brand Identity", "Strategic Branding", "UX / UI Design", "Web Presence", "Custom Website", "Process Automation", "Dev & Integrations", "Not sure yet"],
+      "message": "Tell us about your project",
+      "budget": "Estimated budget",
+      "budgetOptions": ["Under $1,500", "$1,500 – $3,500", "$3,500 – $7,000", "$7,000+"],
+      "submit": "Send message",
+      "success": "Message sent. We'll be in touch soon."
+    }
+  },
+  "contact": {
+    "label": "Ready to start?",
+    "headline": "Ready to take your brand to the next level?",
+    "subCopy": "Tell us about your vision and we'll evaluate if we are the right team to make it a reality.",
+    "cta": "Start a project",
+    "email": "hello@bynd.studio",
+    "socials": ["Instagram", "LinkedIn", "X"]
+  }
+}
