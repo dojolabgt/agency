@@ -19,7 +19,6 @@ type Project = {
 
 type WorkDict = {
   label: string;
-  cta: string;
   projects: Project[];
 };
 

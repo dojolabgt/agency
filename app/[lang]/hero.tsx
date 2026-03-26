@@ -35,7 +35,6 @@ type Dict = {
   ticker: string[];
   work: {
     label: string;
-    cta: string;
     projects: Project[];
   };
   studio: {

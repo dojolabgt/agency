@@ -308,7 +308,7 @@ function NextProject({
   lang: string;
   label: string;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLAnchorElement>(null);
   const inView = useInView(ref, { once: true, margin: "-5%" });
 
   return (
