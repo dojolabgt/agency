@@ -13,6 +13,7 @@ import Contact from "./contact";
 
 type Project = {
   index: string;
+  slug: string;
   name: string;
   category: string;
   tags: string[];
