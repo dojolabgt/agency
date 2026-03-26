@@ -33,110 +33,70 @@
     "projects": [
       {
         "index": "01",
-        "slug": "kova",
-        "name": "Kova",
-        "client": "Kova Labs",
-        "category": "Brand Identity",
-        "tags": [
-          "Naming",
-          "Logotype",
-          "Palette"
-        ],
+        "slug": "regladetrestv",
+        "name": "Regla de Tres",
+        "client": "Regla de Tres TV",
+        "category": "Web & UX Design",
+        "tags": ["WordPress", "SEO", "UX Research"],
         "year": "2024",
-        "description": "Premium sports supplement brand. Visual system built on extreme contrast and modular geometry.",
-        "overview": "Kova needed more than a logo — they needed a visual language sharp enough to cut through a saturated market. We built a system rooted in extreme contrast, modular geometry, and typography that performs as hard as the product itself.",
-        "deliverables": [
-          "Naming",
-          "Logotype",
-          "Color system",
-          "Packaging design",
-          "Brand guidelines"
-        ],
-        "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=85",
+        "description": "Guatemalan digital news platform for young audiences. WordPress build with 99/100 PageSpeed score, driven by UX research.",
+        "overview": "Regla de Tres TV needed more than a redesign — they needed a site that could hold the attention of young Guatemalans in a media landscape flooded with noise. We led UX research to understand how Gen Z consumes news, then built a WordPress + Elementor stack engineered for speed, accessibility, and a 99/100 PageSpeed Insights score. The result is a media brand that feels as sharp as the stories it tells.",
+        "deliverables": ["UX Research", "UI Design", "WordPress Development", "SEO Strategy", "Performance Optimization"],
+        "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
-          "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=85",
-          "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=85"
+          "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=900&q=85"
         ]
       },
       {
         "index": "02",
-        "slug": "lumen-studio",
-        "name": "Lumen Studio",
-        "client": "Lumen Studio",
-        "category": "Visual Systems",
-        "tags": [
-          "Brand System",
-          "Typography",
-          "UI"
-        ],
+        "slug": "medialab-galileo",
+        "name": "MediaLab",
+        "client": "Universidad Galileo",
+        "category": "Web & CMS",
+        "tags": ["CMS", "Video Platform", "WordPress"],
         "year": "2024",
-        "description": "Expanding architecture studio. Minimalist identity built around light as a central concept.",
-        "overview": "An architecture firm with international ambitions but a deeply local story. We distilled their core philosophy — using light as a primary building material — into a visual identity rigorous enough to carry the weight of their portfolio.",
-        "deliverables": [
-          "Brand strategy",
-          "Visual identity",
-          "Typography system",
-          "Website design",
-          "Print collateral"
-        ],
-        "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1400&q=85",
+        "description": "Audiovisual content platform for Universidad Galileo. Custom CMS handling live streaming, graduation archives, and institutional media.",
+        "overview": "Universidad Galileo produces a significant volume of audiovisual content — live events, graduation ceremonies, departmental productions, podcasts. MediaLab needed a platform that could handle live streaming and long-term archiving without becoming a learning management system. We architected a custom WordPress CMS that functions as a full broadcast operation: live, archive, and on-demand, all under one roof.",
+        "deliverables": ["CMS Architecture", "Video Integration", "Live Streaming Setup", "UI Design", "Content Structure"],
+        "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
-          "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85",
-          "https://images.unsplash.com/photo-1513584684374-7beed10a0d7e?auto=format&fit=crop&w=900&q=85"
+          "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=900&q=85"
         ]
       },
       {
         "index": "03",
-        "slug": "arca",
-        "name": "Arca",
-        "client": "Arca Studio",
-        "category": "Art Direction",
-        "tags": [
-          "Editorial",
-          "Packaging",
-          "Identity"
-        ],
+        "slug": "hikrew",
+        "name": "Hikrew",
+        "client": "Hikrew",
+        "category": "SaaS & Product",
+        "tags": ["Web App", "SaaS", "Product Design"],
         "year": "2025",
-        "description": "Slow-fashion brand from CDMX. Archival aesthetic and local craftsmanship as narrative axis.",
-        "overview": "Born from a deep respect for Mexican craft traditions, Arca required a brand that could hold contradictions: archival yet contemporary, handmade yet premium. We built the identity around restraint, material honesty, and the visual grammar of the Mexican archive.",
-        "deliverables": [
-          "Art direction",
-          "Identity system",
-          "Packaging",
-          "Editorial design",
-          "Photography direction"
-        ],
-        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1400&q=85",
+        "description": "Business management SaaS for freelancers in Guatemala. Proposals, milestones, payments, and a freelancer network — built for the local market.",
+        "overview": "Freelancers in Guatemala were stitching together five different tools to manage a single client. Hikrew set out to consolidate the entire workflow — from digital brief to final payment — into one platform built for Central American market realities. We designed the product experience and visual identity, with native integration to Recurrente and a freelancer network that lets users share projects and split revenue.",
+        "deliverables": ["Product Strategy", "UI/UX Design", "Brand Identity", "Design System", "Recurrente Integration"],
+        "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
-          "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1400&q=85",
-          "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=85"
+          "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85"
         ]
       },
       {
         "index": "04",
-        "slug": "drift",
-        "name": "Drift",
-        "client": "Drift Travel",
-        "category": "Strategy",
-        "tags": [
-          "Positioning",
-          "Naming",
-          "Web"
-        ],
+        "slug": "automatizacion-r3tv",
+        "name": "Auto R3TV",
+        "client": "Regla de Tres TV",
+        "category": "Automations",
+        "tags": ["n8n", "AI Writing", "Publishing"],
         "year": "2025",
-        "description": "Luxury travel agency. Brand redefinition focused on unique, unrepeatable experiences.",
-        "overview": "Drift's existing brand said 'tour operator'. Their clients expected something closer to 'private expedition'. We repositioned the brand entirely around curated access — places and experiences that money alone cannot guarantee.",
-        "deliverables": [
-          "Brand strategy",
-          "Naming",
-          "Visual identity",
-          "Website",
-          "Campaign direction"
-        ],
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1400&q=85",
+        "description": "End-to-end content pipeline for Regla de Tres TV. AI-assisted writing, automated publishing, and multi-platform distribution via n8n.",
+        "overview": "Regla de Tres TV was producing content manually across multiple platforms — a time-intensive process that capped their output. We built an n8n-powered pipeline that handles AI-assisted drafting, editorial review triggers, and automated multi-platform publishing. The team now produces more content with the same headcount, and the editorial voice stays consistent across every channel.",
+        "deliverables": ["Process Audit", "n8n Workflow Design", "AI Writing Integration", "Multi-platform Publishing", "Editorial Dashboard"],
+        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
         "gallery": [
-          "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1400&q=85",
-          "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=85"
+          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+          "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=85"
         ]
       }
     ]
