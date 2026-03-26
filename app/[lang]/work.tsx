@@ -84,9 +84,10 @@ function ProjectCard({ project, lang }: { project: Project; lang: string }) {
     >
       {/* Image */}
       <Image
-        src={project.image}
+        src={`/${lang}/work/${project.slug}/opengraph-image`}
         alt={project.name}
         fill
+        unoptimized
         className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
         sizes="(max-width: 768px) 100vw, 50vw"
       />

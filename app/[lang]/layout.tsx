@@ -9,7 +9,6 @@ export default async function LangLayout({
   children,
 }: {
   children: React.ReactNode;
-  params: Promise<{ lang: Locale }>;
 }) {
   return <>{children}</>;
 }

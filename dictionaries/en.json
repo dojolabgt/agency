@@ -346,9 +346,12 @@
     "headline": "Let's talk about your brand.",
     "subCopy": "Tell us your vision. We get to work.",
     "cta": "Start a project",
-    "email": "hello@bynadie.com",
+    "email": "hello@somosnadie.com",
     "socials": [
-      { "label": "Instagram", "url": "https://instagram.com/bynadie.gt" }
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/bynadie.gt"
+      }
     ]
   }
 }
