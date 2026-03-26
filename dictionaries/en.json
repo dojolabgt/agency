@@ -9,7 +9,7 @@
     "availability": "2 spots available · Q2 2026"
   },
   "hero": {
-    "tagline": "bynadie — by nobody.",
+    "tagline": "nadie — nobody.",
     "headline": "Brands built",
     "headlineAccent": "to speak for themselves.",
     "subCopy": "A small studio. A few projects at a time. The work does the talking.",
@@ -30,6 +30,14 @@
     "label": "Selected projects",
     "backLabel": "Work",
     "nextLabel": "Next project",
+    "meta": {
+      "client": "Client",
+      "year": "Year",
+      "category": "Category",
+      "tags": "Tags",
+      "deliverables": "Deliverables",
+      "similarCta": "Start a similar project"
+    },
     "projects": [
       {
         "index": "01",
@@ -37,14 +45,25 @@
         "name": "Regla de Tres",
         "client": "Regla de Tres TV",
         "category": "Web & UX Design",
-        "tags": ["WordPress", "SEO", "UX Research"],
+        "tags": [
+          "WordPress",
+          "SEO",
+          "UX Research"
+        ],
         "year": "2024",
         "description": "Guatemalan digital news platform for young audiences. WordPress build with 99/100 PageSpeed score, driven by UX research.",
         "overview": "Regla de Tres TV needed more than a redesign — they needed a site that could hold the attention of young Guatemalans in a media landscape flooded with noise. We led UX research to understand how Gen Z consumes news, then built a WordPress + Elementor stack engineered for speed, accessibility, and a 99/100 PageSpeed Insights score. The result is a media brand that feels as sharp as the stories it tells.",
-        "deliverables": ["UX Research", "UI Design", "WordPress Development", "SEO Strategy", "Performance Optimization"],
-        "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "UX Research",
+          "UI Design",
+          "WordPress Development",
+          "SEO Strategy",
+          "Performance Optimization"
+        ],
+        "mockup": "browser",
+        "image": "/projects/regladetrestv/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85",
+          "/projects/regladetrestv/thumb.png",
           "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=900&q=85"
         ]
       },
@@ -54,14 +73,25 @@
         "name": "MediaLab",
         "client": "Universidad Galileo",
         "category": "Web & CMS",
-        "tags": ["CMS", "Video Platform", "WordPress"],
+        "tags": [
+          "CMS",
+          "Video Platform",
+          "WordPress"
+        ],
         "year": "2024",
         "description": "Audiovisual content platform for Universidad Galileo. Custom CMS handling live streaming, graduation archives, and institutional media.",
         "overview": "Universidad Galileo produces a significant volume of audiovisual content — live events, graduation ceremonies, departmental productions, podcasts. MediaLab needed a platform that could handle live streaming and long-term archiving without becoming a learning management system. We architected a custom WordPress CMS that functions as a full broadcast operation: live, archive, and on-demand, all under one roof.",
-        "deliverables": ["CMS Architecture", "Video Integration", "Live Streaming Setup", "UI Design", "Content Structure"],
-        "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "CMS Architecture",
+          "Video Integration",
+          "Live Streaming Setup",
+          "UI Design",
+          "Content Structure"
+        ],
+        "mockup": "browser",
+        "image": "/projects/medialab-galileo/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1400&q=85",
+          "/projects/medialab-galileo/thumb.png",
           "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=900&q=85"
         ]
       },
@@ -71,14 +101,25 @@
         "name": "Hikrew",
         "client": "Hikrew",
         "category": "SaaS & Product",
-        "tags": ["Web App", "SaaS", "Product Design"],
+        "tags": [
+          "Web App",
+          "SaaS",
+          "Product Design"
+        ],
         "year": "2025",
         "description": "Business management SaaS for freelancers in Guatemala. Proposals, milestones, payments, and a freelancer network — built for the local market.",
         "overview": "Freelancers in Guatemala were stitching together five different tools to manage a single client. Hikrew set out to consolidate the entire workflow — from digital brief to final payment — into one platform built for Central American market realities. We designed the product experience and visual identity, with native integration to Recurrente and a freelancer network that lets users share projects and split revenue.",
-        "deliverables": ["Product Strategy", "UI/UX Design", "Brand Identity", "Design System", "Recurrente Integration"],
-        "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "Product Strategy",
+          "UI/UX Design",
+          "Brand Identity",
+          "Design System",
+          "Recurrente Integration"
+        ],
+        "mockup": "browser",
+        "image": "/projects/hikrew/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85",
+          "/projects/hikrew/thumb.png",
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85"
         ]
       },
@@ -88,14 +129,25 @@
         "name": "Auto R3TV",
         "client": "Regla de Tres TV",
         "category": "Automations",
-        "tags": ["n8n", "AI Writing", "Publishing"],
+        "tags": [
+          "n8n",
+          "AI Writing",
+          "Publishing"
+        ],
         "year": "2025",
         "description": "End-to-end content pipeline for Regla de Tres TV. AI-assisted writing, automated publishing, and multi-platform distribution via n8n.",
         "overview": "Regla de Tres TV was producing content manually across multiple platforms — a time-intensive process that capped their output. We built an n8n-powered pipeline that handles AI-assisted drafting, editorial review triggers, and automated multi-platform publishing. The team now produces more content with the same headcount, and the editorial voice stays consistent across every channel.",
-        "deliverables": ["Process Audit", "n8n Workflow Design", "AI Writing Integration", "Multi-platform Publishing", "Editorial Dashboard"],
-        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "Process Audit",
+          "n8n Workflow Design",
+          "AI Writing Integration",
+          "Multi-platform Publishing",
+          "Editorial Dashboard"
+        ],
+        "mockup": "screen",
+        "image": "/projects/automatizacion-r3tv/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+          "/projects/automatizacion-r3tv/thumb.png",
           "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=85"
         ]
       }
@@ -297,7 +349,7 @@
     "label": "The studio",
     "headline": "Built by nobody.",
     "paragraphs": [
-      "BYND is short for bynadie — Spanish for 'by nobody'. Not because there's no one behind the work, but because the work shouldn't need a face to justify it.",
+      "Nadie — Spanish for 'nobody'. Not because there's no one behind the work, but because the work shouldn't need a face to justify it.",
       "A small team. A few projects at a time. We stay out of the spotlight and let the brands we build do the talking."
     ]
   },
@@ -310,7 +362,7 @@
     "socials": [
       {
         "label": "Instagram",
-        "url": "https://instagram.com/bynadie.gt"
+        "url": "https://instagram.com/somosnadie"
       }
     ]
   }

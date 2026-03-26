@@ -89,7 +89,7 @@ export default function Contact({ dict, lang }: { dict: ContactDict; lang: strin
         className="flex flex-col md:flex-row items-center justify-between gap-6 pt-8 border-t border-white/[0.06]"
       >
         <p className="text-xs text-white/30">
-          © {new Date().getFullYear()} BYND Studio.
+          © {new Date().getFullYear()} Nadie Studio.
         </p>
 
         <div className="flex items-center gap-6">

@@ -245,7 +245,7 @@ export default function ContactForm({ dict, lang }: { dict: Dict; lang: string }
 
       {/* ── Footer bar ───────────────────────────────────── */}
       <div className="relative z-10 border-t border-white/[0.06] px-6 sm:px-10 md:px-14 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-xs text-white/30">© {new Date().getFullYear()} BYND Studio.</p>
+        <p className="text-xs text-white/30">© {new Date().getFullYear()} Nadie Studio.</p>
         <div className="flex items-center gap-6">
           {dict.contact.socials.map((s) => (
             <a
@@ -326,9 +326,8 @@ function SelectField({
         <button
           type="button"
           onClick={() => setOpen((o) => !o)}
-          className={`w-full bg-white/[0.04] border rounded-xl px-4 py-3 text-sm text-left flex items-center justify-between transition-all duration-200 hover:bg-white/[0.06] outline-none ${
-            open ? "border-white/30 bg-white/[0.06]" : "border-white/10"
-          }`}
+          className={`w-full bg-white/[0.04] border rounded-xl px-4 py-3 text-sm text-left flex items-center justify-between transition-all duration-200 hover:bg-white/[0.06] outline-none ${open ? "border-white/30 bg-white/[0.06]" : "border-white/10"
+            }`}
         >
           <span className={value ? "text-white/80" : "text-white/25"}>
             {value || "—"}
@@ -346,9 +345,8 @@ function SelectField({
                 key={opt}
                 type="button"
                 onClick={() => { onSelect(opt); setOpen(false); }}
-                className={`w-full text-left px-4 py-3 text-sm transition-colors duration-150 hover:bg-white/[0.06] border-b border-white/[0.04] last:border-0 ${
-                  value === opt ? "text-white" : "text-white/55"
-                }`}
+                className={`w-full text-left px-4 py-3 text-sm transition-colors duration-150 hover:bg-white/[0.06] border-b border-white/[0.04] last:border-0 ${value === opt ? "text-white" : "text-white/55"
+                  }`}
               >
                 {opt}
               </button>

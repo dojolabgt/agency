@@ -223,11 +223,10 @@ function CategorySection({
 function PricingCard({ plan, lang }: { plan: Plan; lang: string }) {
   return (
     <div
-      className={`relative flex flex-col w-full rounded-2xl p-6 border transition-all duration-300 hover:border-white/20 group ${
-        plan.highlighted
+      className={`relative flex flex-col w-full rounded-2xl p-6 border transition-all duration-300 hover:border-white/20 group ${plan.highlighted
           ? "bg-white/[0.07] border-white/[0.18]"
           : "bg-white/[0.025] border-white/[0.08]"
-      }`}
+        }`}
     >
       {/* Recommended badge */}
       {plan.highlighted && (
@@ -279,11 +278,10 @@ function PricingCard({ plan, lang }: { plan: Plan; lang: string }) {
       {/* CTA */}
       <Link
         href={`/${lang}/contact`}
-        className={`group/btn flex items-center justify-center gap-2 rounded-full px-5 py-3 text-xs font-semibold transition-all duration-200 active:scale-95 ${
-          plan.highlighted
+        className={`group/btn flex items-center justify-center gap-2 rounded-full px-5 py-3 text-xs font-semibold transition-all duration-200 active:scale-95 ${plan.highlighted
             ? "bg-white text-black hover:bg-white/90"
             : "border border-white/[0.15] text-white/70 hover:border-white/30 hover:text-white"
-        }`}
+          }`}
       >
         {plan.cta}
         <ArrowRight
@@ -330,7 +328,7 @@ function FooterNote({
 
       {/* Footer bar */}
       <div className="border-t border-white/[0.06] px-6 sm:px-10 md:px-14 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-xs text-white/25">© {new Date().getFullYear()} BYND Studio.</p>
+        <p className="text-xs text-white/25">© {new Date().getFullYear()} Nadie Studio.</p>
         <div className="flex items-center gap-6">
           {socials.map((s) => (
             <a

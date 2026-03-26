@@ -152,11 +152,10 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: string }) {
               key={hash}
               href={`/${lang}${hash}`}
               onClick={(e) => handleNavClick(e, hash)}
-              className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all duration-300 cursor-pointer ${
-                activeHash === hash
+              className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all duration-300 cursor-pointer ${activeHash === hash
                   ? "bg-white text-black"
                   : "text-white/50 hover:text-white hover:bg-white/10"
-              }`}
+                }`}
             >
               {label}
             </a>
@@ -226,7 +225,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: string }) {
           >
             <Image
               src="/logo.png"
-              alt="BYND."
+              alt="Nadie."
               width={1200}
               height={400}
               priority

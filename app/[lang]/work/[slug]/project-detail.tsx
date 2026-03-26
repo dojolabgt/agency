@@ -19,13 +19,24 @@ type Project = {
   description: string;
   overview: string;
   deliverables: string[];
+  mockup: "browser" | "screen";
   image: string;
   gallery: string[];
+};
+
+type Meta = {
+  client: string;
+  year: string;
+  category: string;
+  tags: string;
+  deliverables: string;
+  similarCta: string;
 };
 
 type WorkDict = {
   backLabel: string;
   nextLabel: string;
+  meta: Meta;
   projects: Project[];
 };
 
@@ -60,9 +71,11 @@ export default function ProjectDetail({
   const galleryRef = useRef<HTMLDivElement>(null);
   const galleryInView = useInView(galleryRef, { once: true, margin: "-5%" });
 
+  const meta = dict.work.meta;
+
   return (
     <div className="bg-black text-white font-sans selection:bg-white selection:text-black">
-      {/* ── LightRays — very subtle on project pages ─────── */}
+      {/* ── LightRays ────────────────────────────────────── */}
       <div
         aria-hidden
         style={{ position: "fixed", inset: 0, zIndex: 0, pointerEvents: "none" }}
@@ -86,54 +99,124 @@ export default function ProjectDetail({
       {/* ── Nav ──────────────────────────────────────────── */}
       <PageNav lang={lang} dict={dict.nav} />
 
-      {/* ── Hero image ───────────────────────────────────── */}
-      <div className="relative h-[90vh] w-full overflow-hidden">
-        <Image
-          src={project.image}
-          alt={project.name}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+      {/* ── Hero ─────────────────────────────────────────── */}
+      <div className="relative min-h-[100svh] w-full overflow-hidden flex flex-col">
 
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-black/20" />
-        <div className="absolute inset-0 bg-black/25" />
-
-        {/* Top-left: back + index */}
-        <div className="absolute top-28 left-6 sm:left-10 md:left-14 flex items-center gap-4">
+        {/* Back link */}
+        <div className="relative z-10 pt-28 px-6 sm:px-10 md:px-14">
           <Link
             href={`/${lang}#work`}
-            className="flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.25em] text-white/40 hover:text-white transition-colors duration-200"
+            className="inline-flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.25em] text-white/40 hover:text-white transition-colors duration-200"
           >
             <ArrowLeft size={10} />
             {dict.work.backLabel}
           </Link>
-          <span className="text-[10px] text-white/20 tabular-nums">{project.index}</span>
         </div>
 
-        {/* Bottom: project name + category */}
-        <div className="absolute bottom-0 left-0 right-0 px-6 sm:px-10 md:px-14 pb-10 md:pb-14">
-          {/* Category pill */}
+        {/* Headline */}
+        <div className="relative z-10 px-6 sm:px-10 md:px-14 mt-10 md:mt-14">
           <motion.p
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-            className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/50 mb-4"
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="text-[10px] font-medium uppercase tracking-[0.3em] text-white/30 mb-5"
           >
-            {project.category}
+            {project.index} — {project.category}
           </motion.p>
-
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-            className="text-7xl sm:text-8xl md:text-9xl lg:text-[11rem] font-normal tracking-tight leading-none text-white"
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+            className="text-[clamp(3rem,10vw,9rem)] font-normal tracking-tight leading-none text-white"
           >
             {project.name}
           </motion.h1>
+
+          {/* Meta row */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex items-center gap-6 mt-6"
+          >
+            <span className="text-[10px] uppercase tracking-[0.25em] text-white/25">{project.client}</span>
+            <span className="w-px h-3 bg-white/15" />
+            <span className="text-[10px] uppercase tracking-[0.25em] text-white/25 tabular-nums">{project.year}</span>
+            <span className="w-px h-3 bg-white/15" />
+            <div className="flex gap-2">
+              {project.tags.map((tag) => (
+                <span key={tag} className="text-[9px] uppercase tracking-[0.15em] text-white/20 border border-white/10 rounded-full px-2.5 py-1">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </motion.div>
         </div>
+
+        {/* Mockup */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.25 }}
+          className="relative z-10 mx-6 sm:mx-10 md:mx-14 mt-12 mb-0"
+          style={{ perspective: "1200px" }}
+        >
+          <div
+            style={{
+              transform: "rotateX(4deg) rotateY(-1deg)",
+              transformOrigin: "bottom center",
+              transformStyle: "preserve-3d",
+            }}
+          >
+            {/* Browser chrome — solo para proyectos web */}
+            {project.mockup === "browser" && (
+              <div
+                className="rounded-t-2xl px-4 flex items-center gap-2"
+                style={{
+                  background: "#1a1a1a",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderBottom: "none",
+                  height: "36px",
+                }}
+              >
+                <div className="flex gap-1.5">
+                  <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-white/10" />
+                </div>
+                <div
+                  className="flex-1 mx-4 rounded-md flex items-center px-3"
+                  style={{ background: "rgba(255,255,255,0.04)", height: "20px" }}
+                >
+                  <span className="text-[9px] text-white/20 tracking-wide">somosnadie.com</span>
+                </div>
+              </div>
+            )}
+
+            {/* Screenshot */}
+            <div
+              className="relative w-full overflow-hidden"
+              style={{
+                aspectRatio: "16/9",
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderTop: project.mockup === "browser" ? "none" : undefined,
+                borderRadius: project.mockup === "browser" ? "0 0 16px 16px" : "16px",
+                boxShadow: "0 40px 120px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.04)",
+              }}
+            >
+              <Image
+                src={project.image}
+                alt={project.name}
+                fill
+                priority
+                className="object-cover object-left-top"
+                sizes="(max-width: 768px) 100vw, 90vw"
+              />
+              {/* Bottom fade into page */}
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black to-transparent" />
+            </div>
+          </div>
+        </motion.div>
       </div>
 
       {/* ── Metadata strip ───────────────────────────────── */}
@@ -148,11 +231,11 @@ export default function ProjectDetail({
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="grid grid-cols-2 md:grid-cols-4 gap-8"
         >
-          <MetaItem label="Client" value={project.client} />
-          <MetaItem label="Year" value={project.year} />
-          <MetaItem label="Category" value={project.category} />
+          <MetaItem label={meta.client} value={project.client} />
+          <MetaItem label={meta.year} value={project.year} />
+          <MetaItem label={meta.category} value={project.category} />
           <div>
-            <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-white/30 mb-2">Tags</p>
+            <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-white/30 mb-2">{meta.tags}</p>
             <div className="flex flex-wrap gap-1.5">
               {project.tags.map((tag) => (
                 <span
@@ -170,7 +253,6 @@ export default function ProjectDetail({
       {/* ── Overview + deliverables ───────────────────────── */}
       <div className="relative z-10 px-6 sm:px-10 md:px-14 py-20 md:py-28">
         <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-          {/* Overview text */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -183,7 +265,6 @@ export default function ProjectDetail({
             </p>
           </motion.div>
 
-          {/* Deliverables */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -191,7 +272,7 @@ export default function ProjectDetail({
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           >
             <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-white/30 mb-5">
-              Deliverables
+              {meta.deliverables}
             </p>
             <ul className="flex flex-col gap-3">
               {project.deliverables.map((d, i) => (
@@ -206,78 +287,57 @@ export default function ProjectDetail({
       </div>
 
       {/* ── Gallery ──────────────────────────────────────── */}
-      <div ref={galleryRef} className="relative z-10 flex flex-col gap-3 px-6 sm:px-10 md:px-14 pb-3">
-        {/* Full-width image */}
-        {project.gallery[0] && (
-          <motion.div
-            variants={fadeIn}
-            initial="hidden"
-            animate={galleryInView ? "show" : "hidden"}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl"
-          >
-            <Image
-              src={project.gallery[0]}
-              alt={`${project.name} — detail 1`}
-              fill
-              className="object-cover"
-              sizes="100vw"
-            />
-            <div className="absolute inset-0 bg-black/10" />
-          </motion.div>
-        )}
-
-        {/* Two smaller images */}
-        {project.gallery[1] && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div ref={galleryRef} className="relative z-10 px-6 sm:px-10 md:px-14 pb-3">
+        {/* Info card + optional second image */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {/* Second gallery image — only if different from hero */}
+          {project.gallery[1] && (
             <motion.div
               variants={fadeIn}
               initial="hidden"
               animate={galleryInView ? "show" : "hidden"}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="relative aspect-[4/3] overflow-hidden rounded-2xl"
             >
               <Image
                 src={project.gallery[1]}
-                alt={`${project.name} — detail 2`}
+                alt={`${project.name} — detail`}
                 fill
-                className="object-cover"
+                className="object-cover object-left-top"
                 sizes="(max-width: 640px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-black/10" />
             </motion.div>
+          )}
 
-            {/* Placeholder / info card */}
-            <motion.div
-              variants={fadeUp}
-              initial="hidden"
-              animate={galleryInView ? "show" : "hidden"}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-              className="relative aspect-[4/3] rounded-2xl bg-white/[0.03] border border-white/[0.07] flex flex-col justify-between p-8"
-            >
-              <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-white/25">
-                {project.index} — {project.category}
+          {/* Info card */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            animate={galleryInView ? "show" : "hidden"}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1], delay: 0.1 }}
+            className="relative aspect-[4/3] rounded-2xl bg-white/[0.03] border border-white/[0.07] flex flex-col justify-between p-8"
+          >
+            <p className="text-[9px] font-medium uppercase tracking-[0.3em] text-white/25">
+              {project.index} — {project.category}
+            </p>
+            <div>
+              <p className="text-3xl md:text-4xl font-normal text-white/80 tracking-tight mb-3">
+                {project.name}
               </p>
-              <div>
-                <p className="text-3xl md:text-4xl font-normal text-white/80 tracking-tight mb-3">
-                  {project.name}
-                </p>
-                <p className="text-sm text-white/40 leading-relaxed max-w-xs">
-                  {project.description}
-                </p>
-              </div>
-              <div className="flex items-center gap-2">
-                <Link
-                  href={`/${lang}/contact`}
-                  className="group flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.2em] text-white/50 hover:text-white transition-colors duration-200"
-                >
-                  Start a similar project
-                  <ArrowRight size={10} className="transition-transform duration-200 group-hover:translate-x-0.5" />
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        )}
+              <p className="text-sm text-white/40 leading-relaxed max-w-xs">
+                {project.description}
+              </p>
+            </div>
+            <Link
+              href={`/${lang}/contact`}
+              className="group flex items-center gap-2 text-[10px] font-medium uppercase tracking-[0.2em] text-white/50 hover:text-white transition-colors duration-200"
+            >
+              {meta.similarCta}
+              <ArrowRight size={10} className="transition-transform duration-200 group-hover:translate-x-0.5" />
+            </Link>
+          </motion.div>
+        </div>
       </div>
 
       {/* ── Next project ─────────────────────────────────── */}
@@ -317,18 +377,16 @@ function NextProject({
       ref={ref}
       className="group relative z-10 flex flex-col justify-end overflow-hidden h-[60vh] mt-3 mx-6 sm:mx-10 md:mx-14 mb-6 rounded-2xl cursor-pointer"
     >
-      {/* Background image */}
       <Image
         src={project.image}
         alt={project.name}
         fill
-        className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
+        className="object-cover object-left-top transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20" />
       <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-      {/* Content */}
       <motion.div
         variants={fadeUp}
         initial="hidden"
@@ -345,7 +403,8 @@ function NextProject({
           </h3>
           <p className="text-sm text-white/50 mt-2">{project.category}</p>
         </div>
-        <div className="flex-shrink-0 w-12 h-12 rounded-full border border-white/25 flex items-center justify-center opacity-0 translate-x-3 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+        {/* Arrow — always visible on mobile, hover-only on desktop */}
+        <div className="flex-shrink-0 w-12 h-12 rounded-full border border-white/25 flex items-center justify-center opacity-100 md:opacity-0 md:translate-x-3 md:group-hover:opacity-100 md:group-hover:translate-x-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
           <ArrowRight size={16} className="text-white" />
         </div>
       </motion.div>

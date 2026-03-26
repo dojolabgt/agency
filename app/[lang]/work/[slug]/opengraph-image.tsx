@@ -24,7 +24,7 @@ export default async function Image({
   const project = dict.work.projects.find((p) => p.slug === slug);
   if (!project) return new Response("Not found", { status: 404 });
 
-  const [fontData, logoData] = await Promise.all([
+  const [fontData, logoData, thumbData] = await Promise.all([
     readFile(
       join(
         process.cwd(),
@@ -32,9 +32,14 @@ export default async function Image({
       )
     ),
     readFile(join(process.cwd(), "public/logo.png"), "base64"),
+    readFile(
+      join(process.cwd(), "public/projects", slug, "thumb.png"),
+      "base64"
+    ),
   ]);
 
   const logoSrc = `data:image/png;base64,${logoData}`;
+  const thumbSrc = `data:image/png;base64,${thumbData}`;
 
   return new ImageResponse(
     (
@@ -173,12 +178,20 @@ export default async function Image({
               borderRight: "none",
               boxShadow:
                 "-24px 0 80px rgba(0,0,0,0.5), 0 24px 60px rgba(0,0,0,0.4)",
-              backgroundImage: `url(${project.image})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
               position: "relative",
             }}
           >
+            <img
+              src={thumbSrc}
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "left top",
+              }}
+            />
             {/* Subtle inner gradient on image */}
             <div
               style={{

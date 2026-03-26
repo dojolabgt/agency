@@ -9,7 +9,7 @@
     "availability": "2 proyectos disponibles · Q2 2026"
   },
   "hero": {
-    "tagline": "bynadie — por nadie.",
+    "tagline": "nadie — por nadie.",
     "headline": "Marcas construidas",
     "headlineAccent": "para hablar por sí solas.",
     "subCopy": "Un estudio pequeño. Pocos proyectos a la vez. El trabajo habla por sí solo.",
@@ -30,6 +30,14 @@
     "label": "Proyectos seleccionados",
     "backLabel": "Proyectos",
     "nextLabel": "Siguiente proyecto",
+    "meta": {
+      "client": "Cliente",
+      "year": "Año",
+      "category": "Categoría",
+      "tags": "Tags",
+      "deliverables": "Entregables",
+      "similarCta": "Iniciar un proyecto similar"
+    },
     "projects": [
       {
         "index": "01",
@@ -37,14 +45,25 @@
         "name": "Regla de Tres",
         "client": "Regla de Tres TV",
         "category": "Web & UX Design",
-        "tags": ["WordPress", "SEO", "UX Research"],
+        "tags": [
+          "WordPress",
+          "SEO",
+          "UX Research"
+        ],
         "year": "2024",
         "description": "Plataforma de noticias digital guatemalteca enfocada en jóvenes. WordPress con 99/100 en PageSpeed, respaldado por investigación UX.",
         "overview": "Regla de Tres TV necesitaba más que un rediseño — necesitaba un sitio capaz de retener la atención de jóvenes guatemaltecos en un ecosistema mediático saturado. Lideramos una investigación UX para entender cómo la Generación Z consume noticias, y construimos un stack WordPress + Elementor optimizado para velocidad, accesibilidad y un puntaje de 99/100 en PageSpeed Insights. El resultado es una marca de medios tan afilada como las historias que cuenta.",
-        "deliverables": ["Investigación UX", "Diseño UI", "Desarrollo WordPress", "Estrategia SEO", "Optimización de rendimiento"],
-        "image": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "Investigación UX",
+          "Diseño UI",
+          "Desarrollo WordPress",
+          "Estrategia SEO",
+          "Optimización de rendimiento"
+        ],
+        "mockup": "browser",
+        "image": "/projects/regladetrestv/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1400&q=85",
+          "/projects/regladetrestv/thumb.png",
           "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&w=900&q=85"
         ]
       },
@@ -54,14 +73,25 @@
         "name": "MediaLab",
         "client": "Universidad Galileo",
         "category": "Web & CMS",
-        "tags": ["CMS", "Video Platform", "WordPress"],
+        "tags": [
+          "CMS",
+          "Video Platform",
+          "WordPress"
+        ],
         "year": "2024",
         "description": "Plataforma audiovisual de la Universidad Galileo. CMS personalizado para streaming en vivo, archivo de graduaciones y producción institucional.",
         "overview": "Universidad Galileo produce un volumen significativo de contenido audiovisual — eventos en vivo, ceremonias de graduación, producciones departamentales, podcasts. MediaLab necesitaba una plataforma capaz de manejar streaming en vivo y archivado a largo plazo sin convertirse en un LMS. Arquitectamos un CMS en WordPress que funciona como una operación de broadcast completa: en vivo, archivo y bajo demanda, todo bajo un mismo techo.",
-        "deliverables": ["Arquitectura CMS", "Integración de video", "Configuración de streaming", "Diseño UI", "Estructura de contenido"],
-        "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "Arquitectura CMS",
+          "Integración de video",
+          "Configuración de streaming",
+          "Diseño UI",
+          "Estructura de contenido"
+        ],
+        "mockup": "browser",
+        "image": "/projects/medialab-galileo/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=1400&q=85",
+          "/projects/medialab-galileo/thumb.png",
           "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=900&q=85"
         ]
       },
@@ -71,14 +101,25 @@
         "name": "Hikrew",
         "client": "Hikrew",
         "category": "SaaS & Producto",
-        "tags": ["Web App", "SaaS", "Product Design"],
+        "tags": [
+          "Web App",
+          "SaaS",
+          "Product Design"
+        ],
         "year": "2025",
         "description": "SaaS de gestión de negocios para freelancers en Guatemala. Propuestas, hitos de pago, cobros y red de freelancers — construido para el mercado local.",
         "overview": "Los freelancers en Guatemala usaban cinco herramientas distintas para gestionar un solo cliente. Hikrew se propuso consolidar todo el flujo de trabajo — desde el brief digital hasta el pago final — en una sola plataforma adaptada a la realidad del mercado centroamericano. Diseñamos la experiencia de producto y la identidad visual, con integración nativa a Recurrente y una red de freelancers para compartir proyectos y dividir ingresos.",
-        "deliverables": ["Estrategia de producto", "Diseño UI/UX", "Identidad de marca", "Design System", "Integración Recurrente"],
-        "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "Estrategia de producto",
+          "Diseño UI/UX",
+          "Identidad de marca",
+          "Design System",
+          "Integración Recurrente"
+        ],
+        "mockup": "browser",
+        "image": "/projects/hikrew/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1400&q=85",
+          "/projects/hikrew/thumb.png",
           "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85"
         ]
       },
@@ -88,14 +129,25 @@
         "name": "Auto R3TV",
         "client": "Regla de Tres TV",
         "category": "Automatizaciones",
-        "tags": ["n8n", "IA", "Publicación"],
+        "tags": [
+          "n8n",
+          "IA",
+          "Publicación"
+        ],
         "year": "2025",
         "description": "Pipeline de contenido de extremo a extremo para Regla de Tres TV. Redacción con IA, publicación automatizada y distribución multiplataforma vía n8n.",
         "overview": "Regla de Tres TV producía contenido manualmente en múltiples plataformas — un proceso que limitaba su volumen de publicación. Construimos un pipeline con n8n que gestiona la redacción asistida por IA, los disparadores de revisión editorial y la publicación automatizada multiplataforma. El equipo ahora produce más contenido con el mismo equipo humano, manteniendo una voz editorial consistente en cada canal.",
-        "deliverables": ["Auditoría de procesos", "Diseño de flujos n8n", "Integración de IA para redacción", "Publicación multiplataforma", "Dashboard editorial"],
-        "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+        "deliverables": [
+          "Auditoría de procesos",
+          "Diseño de flujos n8n",
+          "Integración de IA para redacción",
+          "Publicación multiplataforma",
+          "Dashboard editorial"
+        ],
+        "mockup": "screen",
+        "image": "/projects/automatizacion-r3tv/thumb.png",
         "gallery": [
-          "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+          "/projects/automatizacion-r3tv/thumb.png",
           "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=85"
         ]
       }
@@ -112,7 +164,11 @@
         "index": "01",
         "title": "Diseño",
         "description": "Sistemas de marca e identidades visuales construidos para durar. Del logotipo al design system completo.",
-        "tags": ["Branding", "Identidad", "UX/UI"],
+        "tags": [
+          "Branding",
+          "Identidad",
+          "UX/UI"
+        ],
         "plans": [
           {
             "title": "Identidad de Marca",
@@ -169,7 +225,11 @@
         "index": "02",
         "title": "Web",
         "description": "Landing pages y sitios a medida diseñados para convertir. Rápidos, bien construidos.",
-        "tags": ["Landing", "Sitio Web", "CMS"],
+        "tags": [
+          "Landing",
+          "Sitio Web",
+          "CMS"
+        ],
         "plans": [
           {
             "title": "Presencia Web",
@@ -210,7 +270,11 @@
         "index": "03",
         "title": "Automatizaciones",
         "description": "n8n, Python, APIs y flujos a medida. Escala tu operación sin contratar más.",
-        "tags": ["n8n", "Python", "APIs"],
+        "tags": [
+          "n8n",
+          "Python",
+          "APIs"
+        ],
         "plans": [
           {
             "title": "Automatización de Procesos",
@@ -259,10 +323,24 @@
       "email": "Correo electrónico",
       "company": "Empresa (opcional)",
       "service": "¿Qué estás buscando?",
-      "serviceOptions": ["Identidad de Marca", "Branding Estratégico", "UX / UI Design", "Presencia Web", "Sitio Web Personalizado", "Automatización de Procesos", "Dev & Integraciones", "Aún no lo sé"],
+      "serviceOptions": [
+        "Identidad de Marca",
+        "Branding Estratégico",
+        "UX / UI Design",
+        "Presencia Web",
+        "Sitio Web Personalizado",
+        "Automatización de Procesos",
+        "Dev & Integraciones",
+        "Aún no lo sé"
+      ],
       "message": "Cuéntanos sobre tu proyecto",
       "budget": "Presupuesto estimado",
-      "budgetOptions": ["Menos de $1,500", "$1,500 – $3,500", "$3,500 – $7,000", "$7,000+"],
+      "budgetOptions": [
+        "Menos de $1,500",
+        "$1,500 – $3,500",
+        "$3,500 – $7,000",
+        "$7,000+"
+      ],
       "submit": "Enviar mensaje",
       "success": "Mensaje enviado. Te contactaremos pronto."
     }
@@ -271,7 +349,7 @@
     "label": "El estudio",
     "headline": "Hecho por nadie.",
     "paragraphs": [
-      "BYND es la abreviación de bynadie. No porque no haya nadie detrás del trabajo, sino porque el trabajo no debería necesitar una cara para justificarse.",
+      "Nadie. No porque no haya nadie detrás del trabajo, sino porque el trabajo no debería necesitar una cara para justificarse.",
       "Un equipo pequeño. Pocos proyectos a la vez. Nos mantenemos fuera del foco y dejamos que las marcas que construimos hablen por sí solas."
     ]
   },
@@ -282,7 +360,10 @@
     "cta": "Iniciar proyecto",
     "email": "hello@somosnadie.com",
     "socials": [
-      { "label": "Instagram", "url": "https://instagram.com/bynadie.gt" }
+      {
+        "label": "Instagram",
+        "url": "https://instagram.com/somosnadie"
+      }
     ]
   }
 }
